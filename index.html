@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>DoctorCare</title>
+</head>
+<body>
+  <nav id="navigation" class="">
+    <div class="wrapper">
+      <a class="logo" href="#home">Doctor<strong>Care</strong></a>
+      
+      <div class="menu">
+        <ul>
+          <li><a onclick="closeMenu()" href="#home">Início</a></li>
+          <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+          <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+        </ul>
+
+        <a class="button" onclick="closeMenu()" href="#contact">Agende a sua consulta</a>
+
+        <ul class="social-links">
+          <li>
+            <a target="_blank" href="https://facebook.com"></a>
+            <img src="./assets/facebook.svg"></img>
+          </li>
+          <li>
+            <a target="_blank" href="https://instagram.com"></a>
+            <img src="./assets/instagram.svg">
+          </li>
+          <li>
+            <a target="_blank" href="https://youtube.com"></a>
+            <img src="./assets/youtube.svg">
+          </li>
+        </ul>
+      </div>
+
+      <button aria-label="Abrir menu" aria-expanded="false" class="open-menu" onclick="openMenu()">
+        <img src="./assets/menu.svg">
+      </button>
+      <button aria-label="Fechar menu" aria-expanded="true" class="close-menu" onclick="closeMenu()">
+        <img src="./assets/x.svg">
+      </button>
+
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>BOA-VINDAS A DOCTORCARE 👋</h4>
+          <h1>Assistência médica especializada para todos</h1>
+        </header>
+        <div class="content">
+          <p>
+            Os médicos da DoctorCare vão além
+            dos sintomas  para tratar a causa
+            raiz de sua doença e proporcionar
+            uma cura a longo prazo.
+          </p>
+          <a class="button" href="#contact">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            Agende a sua consulta
+          </a>
+        </div>
+      </div>
+      <div class="col-b">
+        <img src="./assets/doctor.png" alt="doctor"> 
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <h3>+3500</h3>
+          <p>Pacientes atendidos</p>
+        </div>
+        <div class="stat">
+          <h3>+15</h3>
+          <p>Especialistas disponíveis</p>
+        </div>
+        <div class="stat">
+          <h3>+10</h3>
+          <p>Anos no mercado</p>  
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="wrapper">
+      <header>
+        <h4>Serviços</h4>
+        <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+      </header>
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <img src="./assets/check.svg">
+            <h3>Problemas digestivos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate iusto!</p>
+          </div>
+  
+          <div class="card">
+            <img src="./assets/check.svg">
+            <h3>Problemas digestivos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate iusto!</p>
+          </div>
+  
+          <div class="card">
+            <img src="./assets/check.svg">
+            <h3>Problemas digestivos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate iusto!</p>
+          </div>
+  
+          <div class="card">
+            <img src="./assets/check.svg">
+            <h3>Problemas digestivos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate iusto!</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <secion id="about">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>Sobre nós</h4>
+          <h2>Entenda quem somos e por que existimos</h2>
+        </header>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate iusto!
+          </p>
+      </div>
+      </div>
+      <div class="col-b">
+        <img src="./assets/hapy_doctor.png" alt="happy doctor">
+      </div>
+    </div>
+  </secion>
+
+  <section id="contact">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h2>Entre em contato com a gente!</h2>
+        </header>
+
+        <div class="content">
+          <ul>
+            <li>
+              Rua Amauri Souza, 346
+              <img src="./assets/map-pin.svg" alt="localização">
+            </li>
+            <li>
+              contato@doctorcare.com
+              <img src="./assets/mail.svg" alt="e-mail">
+            </li>
+          </ul>
+
+          <a class="button" href="https://wa.me/5574991168997" target="_blank">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            Agende sua consulta
+          </a>
+        </div>
+      </div>
+      <div class="col-b">
+        <img src="./assets/man_smartphone.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="col-a">
+      <div class="wrapper">
+        <a class="logo" href="#home">Doctor<strong>Care</strong></a>
+        <p>
+          ©2022 DoctorCare<br>
+          Todos os direitos reservados.
+        </p>
+      </div>
+      
+      <div class="col-b">
+        <ul class="social-links">
+          <li>
+            <a target="_blank" href="https://facebook.com"></a>
+            <img src="./assets/facebook.svg"></img>
+          </li>
+          <li>
+            <a target="_blank" href="https://instagram.com"></a>
+            <img src="./assets/instagram.svg">
+          </li>
+          <li>
+            <a target="_blank" href="https://youtube.com"></a>
+            <img src="./assets/youtube.svg">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a id="backToTopButton" href="#home">
+    <img src="./assets/arrow-up-circle.svg" alt="Voltar para o topo">
+  </a>
+  <script  src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+</html>
